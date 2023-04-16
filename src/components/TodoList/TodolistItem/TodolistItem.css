@@ -1,0 +1,75 @@
+.item-card{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 12px;
+    align-items: center;
+    overflow: hidden;
+    &:hover {
+        transition: all 0.2s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+      }
+}
+
+.item-card.High{
+    &:hover{
+        transition: all 0.2s ease-out;
+        border-left: 8px solid #E01717;
+        border-right: 8px solid #E01717;
+    }
+}
+.item-card.Medium{
+    &:hover{
+        transition: all 0.2s ease-out;
+        border-left: 8px solid #FFA800;
+        border-right: 8px solid #FFA800;
+    }
+}
+.item-card.Low{
+    &:hover{
+        transition: all 0.2s ease-out;
+        border-left: 8px solid #448400;
+        border-right: 8px solid #448400;
+    }
+}
+
+.checkbox{
+    display: inline-block;
+    height:20px ;
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.card-title{
+    margin-left: 20px;
+}
+
+.card-title.strike{
+    text-decoration: line-through;
+}
+
+
+.badge{
+    border-radius: 16px;
+    width: 70px;
+    padding: 4px 10px 4px 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.badge.High{
+    background-color: #E0171733;
+    color: #E01717;
+}
+.badge.Medium{
+    background-color: #FFA80033;
+    color:  #FFA800;
+}
+.badge.Low{
+    background-color: #44840033;
+    color:  #448400;
+}
+
