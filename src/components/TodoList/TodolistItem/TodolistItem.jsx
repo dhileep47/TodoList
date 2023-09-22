@@ -4,6 +4,8 @@ const TodolistItem = (props) => {
     const {item, onDelete, onEdit}=props;
     const {title,priority,id}=item;
 
+
+
     const [isChecked, setChecked]=useState(false)
 
     const setTrue=()=>{
@@ -28,9 +30,8 @@ const TodolistItem = (props) => {
          
             <span className="material-symbols-outlined pointer edit-icon" onClick={()=>onEdit(item)}>edit</span>
          
-            <span className="material-symbols-outlined pointer" onClick={()=>onDelete(id)} >delete</span>
+            <span className="material-symbols-outlined pointer" onClick={()=>onDelete(item._id)} >delete</span>
         </div>
-   
 
      );
 }

@@ -10,6 +10,7 @@
 .new-item-card .check{
     margin-right: 20px;
     margin-top: 10px;
+    display: none;
 }
 
 .new-item-card input{
@@ -58,7 +59,7 @@
     border-radius: 16px;
     padding: 4px 10px 4px 10px;
 }
-.pricontainer .low.Low{
+.pricontainer .low.low{
     border:2px solid;
     border-color:#448400;
     background-color:#44840033;   

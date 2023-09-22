@@ -1,7 +1,6 @@
 const Todo = require('../Model/todo')
 
 
-
 exports.getAllTodoList = async (req,res)=>{
     try{
         const list=await Todo.find();

@@ -13,10 +13,11 @@ const Newitem = (props) => {
     const[pri,setPri]=useState('Low');
 
     
-    const isEdit =Boolean(editState.id);
+    const isEdit =Boolean(editState._id);
+
 
     useEffect(()=>{
-        if(editState.id){
+        if(editState._id){
             setData(editState.title)
             setPri(editState.priority)
         }
@@ -38,21 +39,14 @@ const Newitem = (props) => {
             priority:pri
         }
         if(isEdit){
-            obj.id = editState.id;
+            obj._id = editState._id;
             editItem(obj);
         }else{
          addItem(obj);
-
         }
-
         setData('');
         setPri('Low');
-
     }
-
-
-
-
     return ( 
         <div className="new-item-card">
             <div className="check">
